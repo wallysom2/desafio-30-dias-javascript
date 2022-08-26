@@ -1,15 +1,13 @@
+function mediaTotal (number) {
+    let sum = 0
 
-const numbers = [4,6,2] //4
+    number.forEach(element => {
+        sum += element
+    });
 
-function media (numbers) {
+    const avarege = sum / number.length
 
-    let soma = 0
-
-    for (let i = 0; i <= numbers.lenght; i++) {
-        soma = soma + numbers [i]
-        
-    }
- 
+    return avarege
 }
 
-media (numbers);
+console.log (mediaTotal([4,5,6,1,9,1]))
